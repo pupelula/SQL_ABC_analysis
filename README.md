@@ -10,7 +10,6 @@
 Оптимизируя управление запасами и распределение ресурсов, анализ ABC помогает компаниям повысить эффективность и принимать более обоснованные решения при ограниченных ресурсах. 
 
 # 💾Исходные данные
-
 <img width="65%" align="right" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/tables.png"/>
 
 <p align="left">
@@ -64,5 +63,10 @@ FROM
 (SELECT sub_category, profit_share,
 SUM(profit_share) OVER (ORDER BY profit_share DESC) AS cumulative_share
 FROM profit_share_by_category) AS cum_by_sub_category
+
+# ✅Результат
+В ходе ABС анализа каждой подкатегории был присвоен балл важности.
+<img width="100%" align="left" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/result_table.png"/>
+
 
 
