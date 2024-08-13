@@ -27,7 +27,7 @@
 
 # ✏Анализ данных
 ```javascript
---Для начала соединим две таблицы и создадим набор данных с информацией об общей прибыли для каждой подкатегории.
+//Для начала соединим две таблицы и создадим набор данных с информацией об общей прибыли для каждой подкатегории.
 
 WITH profit_by_sub_category AS
 (SELECT sub_category, SUM(profit) AS sub_category_profit
@@ -57,4 +57,8 @@ FROM
 (SELECT sub_category, profit_share,
 SUM(profit_share) OVER (ORDER BY profit_share DESC) AS cumulative_share
 FROM profit_share_by_category) AS cum_by_sub_category
+
+```sqlscript
+SELECT sub_category, profit_share, 
+CASE
 
