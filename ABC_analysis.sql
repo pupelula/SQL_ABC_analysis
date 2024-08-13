@@ -56,5 +56,5 @@ SUM(profit_share) OVER (ORDER BY profit_share DESC) AS cumulative_share
 FROM profit_share_by_category) AS cum_by_sub_category
 
 --RESULTS 
---The ABS analysis assigned a score to each sub-category, and based on this information, managers can 
+--The ABС analysis assigned a score to each sub-category, and based on this information, managers can 
 --better manage inventories and make strategic decisions. 
