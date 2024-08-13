@@ -29,6 +29,7 @@
 
 <p align="left">
   <samp>
+   
 Таблица **list_of_orders**
  - order_id
  - order_date
