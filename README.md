@@ -24,3 +24,8 @@
  - quantity
  - category
  - sub_category
+
+```javascript
+SELECT sub_category, SUM(profit) AS sub_category_profit
+FROM 
+list_of_orders
