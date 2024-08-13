@@ -37,7 +37,7 @@ INNER JOIN order_details
 USING (order_id)
 GROUP BY sub_category),
 
---Создадим новые столбцы. Доля прибыли показывает, какой вклад вносит подкатегория в формирование прибыли.
+//Создадим новые столбцы. Доля прибыли показывает, какой вклад вносит подкатегория в формирование прибыли.
 
 profit_share_by_category AS
 (SELECT sub_category, sub_category_profit,
@@ -45,7 +45,7 @@ ROUND((sub_category_profit / SUM(sub_category_profit) OVER () * 100)::DECIMAL, 2
 FROM profit_by_sub_category
 WHERE sub_category_profit > 0)
 
---И наконец подсчитаем общий итог и присвоим каждой подкатегории свой балл с помощью функции CASE
+//И наконец подсчитаем общий итог и присвоим каждой подкатегории свой балл с помощью функции CASE
 
 SELECT sub_category, profit_share, 
 CASE
@@ -58,7 +58,4 @@ FROM
 SUM(profit_share) OVER (ORDER BY profit_share DESC) AS cumulative_share
 FROM profit_share_by_category) AS cum_by_sub_category
 
-```sqlscript
-SELECT sub_category, profit_share, 
-CASE
 
