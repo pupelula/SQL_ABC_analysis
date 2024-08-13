@@ -25,6 +25,17 @@
  - category
  - sub_category
 
+<img width="55%" align="right" alt="Bootcamp" src="https://github.com/Ashish2030/Ashish2030/blob/main/workbench.svg"/>
+
+<p align="left">
+  <samp>
+* 💻 I'm a full stack web developer<br>
+* 🎨 I'm a self-taught UI designer <br>
+* 📱 I make apps for Android and iOS <br>
+* 🎓 I'm a Computer Science student (graduating in October 2021) <br>
+  </samp>
+</p>
+
 # ✏Анализ данных
 ```javascript
 //Для начала соединим две таблицы и создадим набор данных с информацией об общей прибыли для каждой подкатегории.
