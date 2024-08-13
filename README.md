@@ -67,5 +67,4 @@ FROM profit_share_by_category) AS cum_by_sub_category
 # ✅Результат
 В ходе ABС анализа каждой подкатегории был присвоен балл важности.
 
-<img width="65%" align="right" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/result_table.png" width="230"></td"/>
-
+<img src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/>
