@@ -25,7 +25,7 @@
  - category
  - sub_category
 
-<img width="55%" align="right" alt="Bootcamp" src="https://github.com/Ashish2030/Ashish2030/blob/main/workbench.svg"/>
+<img width="55%" align="right" alt="Bootcamp" src="file:///Users/mariaivanova/Desktop/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-08-13%20%D0%B2%2013.39.16.png"/>
 
 <p align="left">
   <samp>
