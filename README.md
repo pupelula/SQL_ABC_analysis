@@ -26,8 +26,9 @@
  - sub_category
 
 # ✏Анализ данных
-Для начала соединим две таблиыц и создадим набор данных с информацией об общей прибыли для каждой подкатегории.
 ```javascript
+--Для начала соединим две таблицы и создадим набор данных с информацией об общей прибыли для каждой подкатегории.
+
 WITH profit_by_sub_category AS
 (SELECT sub_category, SUM(profit) AS sub_category_profit
 FROM 
@@ -35,3 +36,25 @@ list_of_orders
 INNER JOIN order_details 
 USING (order_id)
 GROUP BY sub_category),
+
+--Создадим новые столбцы. Доля прибыли показывает, какой вклад вносит подкатегория в формирование прибыли.
+
+profit_share_by_category AS
+(SELECT sub_category, sub_category_profit,
+ROUND((sub_category_profit / SUM(sub_category_profit) OVER () * 100)::DECIMAL, 2) AS profit_share
+FROM profit_by_sub_category
+WHERE sub_category_profit > 0)
+
+--И наконец подсчитаем общий итог и присвоим каждой подкатегории свой балл с помощью функции CASE
+
+SELECT sub_category, profit_share, 
+CASE
+WHEN cumulative_share < 80 THEN 'A'
+WHEN cumulative_share < 95 THEN 'B'
+ELSE 'C'
+END AS ABC
+FROM 
+(SELECT sub_category, profit_share,
+SUM(profit_share) OVER (ORDER BY profit_share DESC) AS cumulative_share
+FROM profit_share_by_category) AS cum_by_sub_category
+
