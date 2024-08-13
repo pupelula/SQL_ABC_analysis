@@ -69,5 +69,6 @@ FROM profit_share_by_category) AS cum_by_sub_category
 В ходе ABС анализа каждой подкатегории был присвоен балл важности.
 <img width="45%" align="left" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/result_table.png?raw=true"/>
 
+
 <img width="45%" align="left" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/profit_chart.png?raw=true"/>
 
