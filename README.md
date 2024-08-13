@@ -25,7 +25,13 @@
  - category
  - sub_category
 
+# ✏Анализ данных
+Для начала соединим две таблиыц и создадим набор данных с информацией об общей прибыли для каждой подкатегории.
 ```javascript
-SELECT sub_category, SUM(profit) AS sub_category_profit
+WITH profit_by_sub_category AS
+(SELECT sub_category, SUM(profit) AS sub_category_profit
 FROM 
 list_of_orders
+INNER JOIN order_details 
+USING (order_id)
+GROUP BY sub_category),
