@@ -29,10 +29,19 @@
 
 <p align="left">
   <samp>
-* 💻 I'm a full stack web developer<br>
-* 🎨 I'm a self-taught UI designer <br>
-* 📱 I make apps for Android and iOS <br>
-* 🎓 I'm a Computer Science student (graduating in October 2021) <br>
+Таблица **list_of_orders**
+ - order_id
+ - order_date
+ - customer_name
+ - state
+    
+Таблица **order_details**
+ - order_id
+ - amount
+ - profit
+ - quantity
+ - category
+ - sub_category
   </samp>
 </p>
 
