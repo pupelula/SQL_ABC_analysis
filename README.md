@@ -73,3 +73,6 @@ FROM profit_share_by_category) AS cum_by_sub_category
 
 <img width="75%" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/profit_chart.png?raw=true"/>
 
+
+На основе этого анализа компания может оптимизировать процессы контроля запасов, сократить расходы, связанные с запасами,и добиться большей прибыльности на современном конкурентном рынке.
+
