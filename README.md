@@ -11,21 +11,7 @@
 
 # 💾Исходные данные
 
-Таблица **list_of_orders**
- - order_id
- - order_date
- - customer_name
- - state
-    
-Таблица **order_details**
- - order_id
- - amount
- - profit
- - quantity
- - category
- - sub_category
-
-<img width="55%" align="right" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/tables.png"/>
+<img width="65%" align="right" alt="Bootcamp" src="https://github.com/pupelula/SQL_ABC_analysis/blob/main/tables.png"/>
 
 <p align="left">
   <samp>
